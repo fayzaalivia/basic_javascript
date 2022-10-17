@@ -1,6 +1,6 @@
-for (i = 1; i<=3; i++){
+var i = 1
+console.log('perulangan while')
+for(;i<=5;){
     console.log(i)
-}
-for (i = 3; i>=1; i--) {
-    console.log(i)
+    i+=1
 }
