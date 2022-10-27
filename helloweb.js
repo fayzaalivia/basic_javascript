@@ -1,3 +1,3 @@
 <script>
-    document.write
+    document.write("haii apakabar")
 </script>

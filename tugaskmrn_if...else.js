@@ -9,3 +9,10 @@ if (jam >= 13){ //jika 'jam' lebih besar atau sama dengan 13
 
 var cekJam = (jam >= 13) ? "PM":"AM";
 console.log(cekJam)
+console.log("\n")
+
+var aku =5
+var dia =3
+if(aku < dia);{
+    console.log("sipp");
+}
