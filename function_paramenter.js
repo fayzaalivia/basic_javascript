@@ -3,3 +3,6 @@ function sayHello(name){
 }
 
 sayHello("chan");
+sayHello("mark");
+sayHello("jenn");
+sayHello("taey");

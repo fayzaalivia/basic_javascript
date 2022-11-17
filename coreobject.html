@@ -1,0 +1,123 @@
+<script>
+    //lesson 37
+    /*reminder
+    function kopiMix(bahan1, bahan2, bahan3){
+        this.bahan1 = bahan1,
+        this.bahan2 = bahan2,
+        this.bahan3 = bahan3d
+    }
+
+    var kopimark = new kopiMix('gula', 'kopi', 'krim');
+    var kopiecan = new kopiMix('gula', 'kopi', 'kental');
+    document.write(kopimark.bahan3)
+    document.write(kopiecan.bahan3)
+    
+
+   var courses = new Array('menjahit', 'menari', 'memasak');
+   courses[2] ='bernyanyi'
+   document.write(courses[2])
+   console.log(courses[2])
+   
+
+  //lesson 38
+  var courses = new Array(3)
+  courses[0] = 'menjahit'
+  courses[1] = 'memasak'
+  courses[2] = 'menari'
+
+  var courses = ['menjahit', 'memasak', 'menari']
+  
+
+ //lesson 39
+
+ var c1 = ['menjahit ', 'memasak ', 'menari ']
+ var c2 = ['progamming ', 'bernyanyi ', 'berenang ']
+ var courses = c1.concat(c2)
+ document.write(courses)
+ document.write(courses.lenght)
+
+
+// lesson 40 ingat array assosiatif dalam javascript adalah object
+
+var person = []
+person['nama'] = 'ian '
+person['age'] = 32 
+document.write(person['nama']);
+document.write(person['age']);
+ 
+
+//lesson 41 math
+
+document.write(Math.PI)
+var number = Math.sqrt(81)
+document.write(number+ '<br>')
+var random = Math.ceil(Math.random()*10)
+document.write(random+ '<br>')
+
+var year = 2005
+document.write(calcCent(year));
+function calcCent(year){
+    var count = Math.floor(year/100)
+    return count
+} 
+
+
+var number = prompt("Masukan angka nya", "");
+var answer = Math.sqrt(number);
+alert("Nilai dari akar pangkat dua " + number + " adalah " + answer);
+
+var r = prompt('masukan jari- jari')
+var t = prompt('masukan tinggi')
+
+alert('volume tabung dengan tinggi = ' + t +'m\ndan jari-jari = ' + r + "m adalah " + tabung (r, t) + " m2")
+
+function tabung (r, t){
+var volume = Math.PI.toFixed(2) * (Math.pow(r,2)) * t
+return Math.floor (volume)
+}
+
+
+function myAlert()
+{  
+    var nama = prompt('masukan nama...');
+    alert('Wellcome ' + nama);
+}
+setInterval(myAlert, 5000)
+
+ 
+// lesson 42
+function prtintTime(){
+      var d = new Date();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
+    document.body.innerHTML = hours+ ' : ' +minutes+ ' : ' +seconds;
+}
+setInterval(prtintTime, 1000);
+
+
+var tahunLahir = prompt ('Maukkan tahun lahir..');
+var blnLahir = prompt ('Maukkan bulan lahir..') - 1;
+var tglLahir = prompt ('Maukkan tanggal lahir..');
+
+   alert("hari lahir anda " + hariLahir(tahunLahir,blnLahir,tglLahir)); 
+
+function hariLahir(tahunLahir, blnLahir, tglLahir) {
+   var nama = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+   var d = new Date(tahunLahir, blnLahir, tglLahir);
+
+   return nama[d.getDay()]  
+}*/
+
+    var increase =parseInt(prompt('masukan jumlah kenaikan harga?'));
+    var prices = [20, 70, 90];
+    var newPrices = [];
+
+    for(var i=0;i< prices.length;i++){
+        var n =prices[i]+increase;
+        newPrices.push(n);
+    };
+    document.write (newPrices[0] + "<br>" + newPrices[1] + "<br>" + newPrices[2]);
+    console.log(newPrices);
+    alert(newPrices);
+</script>

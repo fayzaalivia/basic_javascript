@@ -1,0 +1,56 @@
+<script>
+    // lesson 3.1
+/*var person = {
+    name : 'fayza',
+    age : 17,
+    favcolor : 'blue'
+}
+console.log(person.name)
+console.log(person['name'])
+console.log(person.name.length)*/
+
+//lesson 3.2 object constructor
+/*function person(name, age, favcolor){
+    this.name= name,
+    this.age= age,
+    this.color= favcolor
+};
+
+//instance object
+var p1 = new person('mark ', 23 , 'red ');
+var p2 = new person('chan ', 22 , 'blue ');
+var p3 = new person('nana ', 17 , 'pink ');
+var p4 = new person('riel ', 17 , 'black ');
+var p5 = new person('haidar ', 19 , 'white ');
+
+document.write(p1.name) 
+document.write(p2['name']) 
+document.write(p3['color']) 
+document.write(p2.color)
+document.write(p2['age'])*/
+
+//lesson 3.5 method
+function person(name, age){
+    this.name = name,
+    this.age = age,
+    //cara 1
+    this.changeNama = function changeNama(name){
+        this.name = name
+    }
+    //cara 2 
+    this.changeAge = changeAge
+    function changeAge(age) {
+        this.age = age
+        return this.age
+    }
+}
+
+var p1 = new person('jake', 20)
+console.log(p1.name)
+console.log(p1.age)
+
+p1.changeNama('mark')
+console.log(p1.name)
+p1.changeAge(23)
+console.log(p1.age)
+</script>
